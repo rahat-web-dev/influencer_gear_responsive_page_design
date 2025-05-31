@@ -216,7 +216,7 @@ body {
 
 /* Section-3 Start */
 .section-3 {
-  margin: 0px 197px 100px 196px;
+  margin: 0px 196px 100px 196px;
 }
 .collection-title > h2 {
   text-align: center;
@@ -262,4 +262,103 @@ body {
 .fa-regular {
   color: gold;
   font-size: 0.87rem;
+}
+.see-more {
+  margin-top: 50px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: rgba(224, 44, 109, 0.87);
+  text-align: end;
+}
+/* Section-3 End */
+
+/* Section-3 REsponsive Start */
+@media (max-width: 576px) {
+  .section-3 {
+    margin: 0px 15px 32px 15px;
+    width: calc(100% - 30px);
+    height: auto;
+  }
+  .collection-title > h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-text-color);
+  }
+  .collection-container {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .collection {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+  }
+  .collection-img {
+    object-fit: cover;
+    margin-bottom: 16px;
+  }
+  .see-more {
+    margin-top: 32px;
+    font-size: 1rem;
+    font-weight: 700;
+    color: rgba(224, 44, 109, 0.87);
+    text-align: end;
+  }
+}
+/* Section-3 Responsive End */
+
+/* Section-4 Start */
+.section-4 {
+  margin: 0px 165px 100px 195px;
+}
+.feature-container {
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  gap: 120px;
+}
+
+.feature-img > img {
+  width: 465px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.feature-info {
+  margin: 23px 0px 23px 0px;
+  width: calc(100% - 46px);
+  padding-bottom: 5px;
+}
+.feature-title {
+  line-height: 60px;
+  font-size: 2.35rem;
+  font-weight: 700;
+  color: #0a0826;
+  text-align: top start;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+.feature-description {
+  max-width: 501px;
+  line-height: 28px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #6c6c6c;
+  text-align: start;
+  margin-bottom: 16px;
+}
+.feature-btn {
+  max-width: 155px;
+  max-height: 44px;
+  padding: 10px 24px;
+  background-color: var(--btn-bg-color);
+  color: var(--btn-text-color);
+  font-size: var(--primary-font-size);
+  margin-bottom: 0px;
 }
